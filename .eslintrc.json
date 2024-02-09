@@ -10,5 +10,9 @@
     },
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": "off",
+        "eqeqeq": "off",
+        "max-len": ["error", { "code": 400 }]
     }
 }

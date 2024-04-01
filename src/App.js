@@ -7,7 +7,9 @@ import { themeColor } from './theme/style';
 import { GlobalStyles } from './GlobalStyles';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
+import Projects from './pages/Projects';
 import Project from './pages/Project';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,9 +19,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projetos" element={<Project />} />
+          <Route path="/projetos" element={<Projects />} />
+          <Route path="/projetos/:id" element={<Project />} />
           <Route path="/contato" element={<Contact />} />
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   );

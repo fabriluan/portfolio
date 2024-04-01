@@ -1,7 +1,9 @@
 import React from 'react';
 import {
-  FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaShopify, FaDocker,
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaShopify, FaDocker, FaWordpress,
 } from 'react-icons/fa';
+import { FaElementor } from 'react-icons/fa6';
+import { CgFigma } from 'react-icons/cg';
 import { SiStyledcomponents } from 'react-icons/si';
 import Center from '../../components/Center';
 import * as styles from './style';
@@ -9,7 +11,7 @@ import HeaderDesktop from '../../components/Header';
 
 import perfil from '../../assets/perfil.jpeg';
 import Social from '../../components/Social';
-import Experience from '../../components/Experience';
+// import Experience from '../../components/Experience';
 
 export default function Home() {
   const icons = [
@@ -20,7 +22,10 @@ export default function Home() {
     { icon: <FaGitAlt />, text: 'Git' },
     { icon: <SiStyledcomponents />, text: 'Styled' },
     { icon: <FaShopify />, text: 'Shopify' },
+    { icon: <FaWordpress />, text: 'WordPress' },
+    { icon: <FaElementor />, text: 'Elementor' },
     { icon: <FaDocker />, text: 'Docker' },
+    { icon: <CgFigma />, text: 'Figma' },
   ];
 
   return (
@@ -58,7 +63,7 @@ export default function Home() {
           </styles.GroupSkills>
         </styles.SkillsSt>
 
-        <styles.Experience className="box_section">
+        {/* <styles.Experience className="box_section">
           <h2 className="title_section">Experiência Profissional</h2>
 
           <styles.ExperienceYear>
@@ -67,7 +72,7 @@ export default function Home() {
 
           <Experience />
           <Experience />
-        </styles.Experience>
+        </styles.Experience> */}
       </Center>
     </article>
   );

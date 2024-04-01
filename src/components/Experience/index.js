@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import img from '../../assets/perfil.jpeg';
 
 import * as styles from './style';
@@ -15,7 +16,7 @@ export default function Experience() {
         <h3>Projetos 01</h3>
         <p>
           O projeto foi criado apartir de algumas coisas, foi criado apartir de algumas coisas. Foi criado apartir de algumas coisas, foi criado apartir de
-          <b>Ver mais</b>
+          <Link to="/projetos">Ver mais</Link>
         </p>
       </styles.GroupExperience>
     </styles.ExperienceSt>

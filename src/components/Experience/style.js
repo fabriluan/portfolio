@@ -34,10 +34,11 @@ export const GroupExperience = styled.div`
   p{
     font-size: 15px;
 
-    b{
+    a{
       color: ${(props) => props.theme.green};
       margin-left: 3px;
       text-decoration: underline;
+      font-weight: 700;
     }
   }
 `;

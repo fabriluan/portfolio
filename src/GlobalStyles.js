@@ -26,16 +26,24 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .title_section{
-      font-size: 26px;
+      font-size: 24px;
       letter-spacing: 0.1rem;
       font-family: 'Lalezar', system-ui;
       text-transform: uppercase;
       color: ${(props) => props.theme.textLigth};
+
+      @media screen and (max-width: 1000px){
+        font-size: 20px;
+      }
     }
 
     .article_section{
       display: flex;
       flex-direction: row;
+
+      @media screen and (max-width: 1000px){
+        flex-direction: column;
+      }
     }
 
     .box_section{

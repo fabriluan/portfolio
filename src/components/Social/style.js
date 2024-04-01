@@ -11,4 +11,10 @@ export const SocialSt = styled.div`
     margin-right: 13px;
     font-size: 35px;
   }
+
+  @media screen and (max-width: 1000px){
+    a{
+      font-size: 30px;
+    }
+  }
 `;

@@ -15,7 +15,7 @@ export const GroupHome = styled.div`
     width: calc(100% - 230px);
 
     p{
-      font-size: 19px;
+      font-size: 18px;
     }
   }
 
@@ -24,6 +24,24 @@ export const GroupHome = styled.div`
     max-width: 190px;
     border-radius: 100%;
     object-fit: cover;
+  }
+
+  @media screen and (max-width: 1000px){
+    flex-direction: column;
+
+    div{
+      width: 100%;
+
+      p{
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    }
+
+    img{
+      max-width: 80px;
+      display: none;
+    }
   }
 `;
 
@@ -37,6 +55,7 @@ export const GroupSkills = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 8px;
 `;
 
@@ -51,9 +70,13 @@ export const InfoSkills = styled.div`
 
   h6{
     margin-top: 5px;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 1000px){
+    margin-bottom: 15px;
   }
 `;
 
